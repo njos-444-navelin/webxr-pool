@@ -25,7 +25,8 @@
 ## Git
 
 - Small, single-concern commits with imperative subjects.
-- Branch per phase or feature; `main` is always deployable.
+- `main` is protected: no direct pushes, no force pushes, no deletion. Every change lands through a pull request whose `verify` CI check is green. Branch per phase or feature; `main` is always deployable.
+- Pull requests squash-merge or merge; review threads must be resolved before merging.
 
 ## Working with AI agents
 
