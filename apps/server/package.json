@@ -1,0 +1,23 @@
+{
+	"name": "@webxr-pool/server",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Cloudflare Worker: serves the built web app and hosts one Durable Object per room.",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy",
+		"types": "wrangler types",
+		"check": "wrangler types && tsc --noEmit",
+		"test": "vitest run --passWithNoTests"
+	},
+	"dependencies": {
+		"@webxr-pool/shared": "workspace:*",
+		"@webxr-pool/sim": "workspace:*"
+	},
+	"devDependencies": {
+		"typescript": "^6.0.3",
+		"vitest": "^4.1.8",
+		"wrangler": "^4.134.0"
+	}
+}

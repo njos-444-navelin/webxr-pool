@@ -1,0 +1,4 @@
+# Copy to .dev.vars for local development. Never commit .dev.vars.
+# LIVEKIT_API_KEY=
+# LIVEKIT_API_SECRET=
+# LIVEKIT_URL=

@@ -1,0 +1,22 @@
+{
+	"name": "@webxr-pool/shared",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Design tokens, settings schema and network message schemas shared by web and server.",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"check": "tsc --noEmit"
+	},
+	"dependencies": {
+		"valibot": "^1.1.0"
+	},
+	"devDependencies": {
+		"typescript": "^6.0.3",
+		"vitest": "^4.1.8"
+	}
+}

@@ -1,0 +1,10 @@
+pnpm-lock.yaml
+node_modules/
+dist/
+build/
+.svelte-kit/
+.wrangler/
+apps/web/static/
+apps/server/worker-configuration.d.ts
+.claude/skills/
+skills-lock.json

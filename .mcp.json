@@ -1,0 +1,20 @@
+{
+	"mcpServers": {
+		"svelte": {
+			"type": "http",
+			"url": "https://mcp.svelte.dev/mcp"
+		},
+		"cloudflare-docs": {
+			"type": "http",
+			"url": "https://docs.mcp.cloudflare.com/mcp"
+		},
+		"livekit-docs": {
+			"type": "http",
+			"url": "https://docs.livekit.io/mcp"
+		},
+		"babylonjs-gui": {
+			"command": "npx",
+			"args": ["-y", "-p", "@babylonjs/mcp-servers", "babylonjs-gui-mcp-server"]
+		}
+	}
+}

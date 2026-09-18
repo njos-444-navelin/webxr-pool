@@ -1,0 +1,33 @@
+{
+	"name": "webxr-pool",
+	"private": true,
+	"version": "0.0.0",
+	"description": "Crossplay WebXR pool: VR, desktop and mobile at one table.",
+	"type": "module",
+	"packageManager": "pnpm@12.4.2",
+	"engines": {
+		"node": ">=24"
+	},
+	"scripts": {
+		"dev": "pnpm --filter @webxr-pool/web dev",
+		"dev:server": "pnpm --filter @webxr-pool/server dev",
+		"build": "pnpm -r build",
+		"test": "pnpm -r --if-present test",
+		"check": "pnpm -r --if-present check",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write .",
+		"verify": "pnpm lint && pnpm check && pnpm test && pnpm build"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"eslint": "^10.4.1",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-svelte": "^3.19.0",
+		"globals": "^17.6.0",
+		"prettier": "^3.8.3",
+		"prettier-plugin-svelte": "^4.1.0",
+		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.60.1",
+		"vitest": "^4.1.8"
+	}
+}

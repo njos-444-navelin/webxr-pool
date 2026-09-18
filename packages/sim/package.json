@@ -1,0 +1,19 @@
+{
+	"name": "@webxr-pool/sim",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Deterministic pool physics, rules and table geometry. No DOM, no engine, no randomness.",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"check": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"typescript": "^6.0.3",
+		"vitest": "^4.1.8"
+	}
+}

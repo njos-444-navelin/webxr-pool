@@ -1,0 +1,18 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "webxr-pool",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-09-01",
+	"compatibility_flags": ["nodejs_compat"],
+	"observability": { "enabled": true },
+	// The built SvelteKit site (apps/web/build) is served as static assets by this Worker.
+	"assets": {
+		"directory": "../web/build",
+		"binding": "ASSETS",
+		"not_found_handling": "none"
+	},
+	"durable_objects": {
+		"bindings": [{ "name": "ROOMS", "class_name": "Room" }]
+	},
+	"migrations": [{ "tag": "v1", "new_sqlite_classes": ["Room"] }]
+}

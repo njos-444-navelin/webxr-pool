@@ -1,0 +1,13 @@
+packages:
+  - apps/*
+  - packages/*
+
+# Dependencies allowed to run install scripts (pnpm blocks all others).
+allowBuilds:
+  esbuild: true
+  workerd: true
+
+# pnpm 12 enforces a minimum release age; these are newer than the policy allows.
+minimumReleaseAgeExclude:
+  - miniflare@5.20260917.0-alpha
+  - wrangler@4.134.0
